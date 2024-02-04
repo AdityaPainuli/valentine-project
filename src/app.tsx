@@ -18,10 +18,6 @@ const App = () => {
     const [yesPressed, setYesPressed] = useState<boolean>(false);
     const btnsize = sayno * 20 + 16;
 
-    const getButtonText = () => {
-        const randomIndex = Math.floor(Math.random() * phrases.length);
-        return phrases[randomIndex];
-    }
 
     const handleClick = () => {
         setSayNo(sayno + 1);
